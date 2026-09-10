@@ -62,7 +62,7 @@ export default function AppointmentCta() {
                 href="mailto:hello@drmayareynolds.com"
                 className="btn-pill bg-[#1A352F] text-[#FBF9F5] border-[#1A352F] hover:bg-[#BA6A4B] hover:border-[#BA6A4B] px-9 py-3.5 text-[11.5px]"
               >
-                Book an Appointment
+                Book a Consultation
               </a>
             ) : (
               <a
@@ -78,17 +78,17 @@ export default function AppointmentCta() {
           <div className="grid grid-cols-2 gap-4 md:gap-5">
             <div className="grainy-image relative aspect-[3/4] shadow-sm">
               <Image
-                src={isRedesign ? "/images/maya-reynolds.png" : "/images/original/shells1.jpg"}
-                alt={isRedesign ? "Dr. Maya Reynolds, Licensed Clinical Psychologist" : "Person picking up seashells on a sandy beach"}
+                src={isRedesign ? "/images/redesign-therapy-space.jpg" : "/images/original/shells1.jpg"}
+                alt={isRedesign ? "Calm, welcoming therapy seating in Santa Monica" : "Person picking up seashells on a sandy beach"}
                 fill
-                className="object-cover object-top"
+                className="object-cover"
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
             <div className="grainy-image relative aspect-[3/4] mt-8 md:mt-12 shadow-sm">
               <Image
                 src={isRedesign ? "/images/redesign-beach.jpg" : "/images/original/shells2.jpg"}
-                alt={isRedesign ? "Serene Santa Monica coastline" : "Parent and child exploring shells on the beach"}
+                alt={isRedesign ? "Serene Santa Monica coastline at sunset" : "Parent and child exploring shells on the beach"}
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 50vw, 25vw"

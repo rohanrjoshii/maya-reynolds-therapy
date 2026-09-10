@@ -13,18 +13,18 @@ export default function HeroSection() {
     >
       <div className="section-max">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
-          {/* Left Column: Primary Prominent Image */}
+          {/* Left Column: Prominent Photo */}
           <div className="w-full lg:w-[42%] shrink-0 order-2 lg:order-1">
             <div className="grainy-image relative aspect-[10/13] w-full max-w-lg mx-auto lg:max-w-none shadow-sm">
               <Image
                 src={
                   isRedesign
-                    ? "/images/maya-reynolds.png"
+                    ? "/images/redesign-hero.jpg"
                     : "/images/original/hero-family.jpg"
                 }
                 alt={
                   isRedesign
-                    ? "Dr. Maya Reynolds, Licensed Clinical Psychologist in Santa Monica"
+                    ? "Thoughtful professional finding calm and balance in Santa Monica"
                     : "Family embracing on the beach"
                 }
                 fill
@@ -46,11 +46,11 @@ export default function HeroSection() {
               }}
             >
               {isRedesign
-                ? "Online & In-Person Therapy in Santa Monica & Across CA"
+                ? "Licensed Clinical Psychologist in Santa Monica, CA"
                 : "Online & In-Person Counseling in Newbury Park & Across CA"}
             </p>
 
-            {/* Headline */}
+            {/* Headline with Local SEO */}
             <h1
               className="text-[34px] sm:text-[40px] lg:text-[46px] xl:text-[50px] leading-[1.14] font-normal mb-6"
               style={{
@@ -60,8 +60,8 @@ export default function HeroSection() {
             >
               {isRedesign ? (
                 <>
-                  Find clarity, calm, and a stronger sense of{" "}
-                  <span className="font-script">self</span>.
+                  Therapy for Anxiety, Trauma, and Burnout in{" "}
+                  <span className="font-script">Santa Monica</span>.
                 </>
               ) : (
                 <>
@@ -80,7 +80,7 @@ export default function HeroSection() {
               }}
             >
               {isRedesign
-                ? "Therapy for high-achieving adults navigating anxiety, trauma, and burnout. Practical tools combined with depth-oriented work, offered in Santa Monica and across California."
+                ? "Dr. Maya Reynolds, PsyD provides grounded, evidence-based therapy for high-achieving adults in Santa Monica and across California. Practical tools combined with depth-oriented care for anxiety, EMDR trauma processing, and sustainable healing."
                 : "Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow."}
             </p>
 
@@ -91,7 +91,7 @@ export default function HeroSection() {
                   href="#contact"
                   className="btn-pill bg-[#1A352F] text-[#FBF9F5] border-[#1A352F] hover:bg-[#BA6A4B] hover:border-[#BA6A4B]"
                 >
-                  Book an Appointment
+                  Schedule a Consultation
                 </a>
               ) : (
                 <a href="#contact" className="cta-underline">
@@ -101,7 +101,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right Column: Secondary Beach Image */}
+          {/* Right Column: Secondary Lifestyle Beach Image */}
           <div className="w-full lg:w-[20%] order-3 hidden lg:block self-center pt-12">
             <div className="grainy-image relative aspect-[3/4] w-full shadow-sm">
               <Image
