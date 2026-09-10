@@ -7,84 +7,98 @@ export default function HowWeWorkSection() {
   const { isRedesign } = useTheme();
 
   return (
-    <section id="about" className="py-20 md:py-32 px-[5vw] transition-colors duration-300" style={{ background: "var(--color-bg)" }}>
+    <section id="about" className="py-20 md:py-28 px-[5vw] transition-colors duration-300" style={{ background: "var(--color-bg)" }}>
       <div className="w-full max-w-[1720px] mx-auto">
-        {/* Eyebrow */}
-        <p
-          className="text-[11px] sm:text-[12px] tracking-[0.24em] uppercase font-semibold italic mb-4"
-          style={{ color: "var(--color-eyebrow)", fontFamily: "var(--font-body)" }}
-        >
-          {isRedesign ? "About Dr. Maya Reynolds, PsyD" : "How We Work"}
-        </p>
+        {/* Header Block: Eyebrow + Headline */}
+        <div className="max-w-4xl mb-12 md:mb-16">
+          <p
+            className="text-[11px] sm:text-[12px] tracking-[0.24em] uppercase font-semibold italic mb-3"
+            style={{ color: "var(--color-eyebrow)", fontFamily: "var(--font-body)" }}
+          >
+            {isRedesign ? "About Dr. Maya Reynolds, PsyD" : "How We Work"}
+          </p>
 
-        <h2
-          className="text-[36px] sm:text-[46px] md:text-[54px] lg:text-[62px] leading-[1.12] font-normal mb-12 md:mb-16 tracking-[-0.015em]"
-          style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
-        >
-          {isRedesign ? (
-            "A warm, collaborative, and grounded approach."
-          ) : (
-            "We're here to make a difference."
-          )}
-        </h2>
+          <h2
+            className="text-[34px] sm:text-[44px] md:text-[52px] lg:text-[58px] leading-[1.12] font-normal tracking-[-0.015em]"
+            style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
+          >
+            {isRedesign ? (
+              "A warm, collaborative, and grounded approach."
+            ) : (
+              "We're here to make a difference."
+            )}
+          </h2>
+        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 xl:gap-20 items-start">
-          {/* Dr. Maya's Portrait (Single intentional occurrence on the site) */}
-          <div className="lg:col-span-5 order-2 lg:order-1 lg:sticky lg:top-32">
+        {/* Content Layout: Photo on Left + Editorial 2-Column Content on Right */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 xl:gap-16 items-start">
+          {/* Therapist Photo */}
+          <div className="lg:col-span-4 lg:sticky lg:top-32">
             <div className="grainy-image relative aspect-[3/4] w-full shadow-md">
               <Image
                 src={isRedesign ? "/images/maya-reynolds.png" : "/images/original/family-beach.jpg"}
                 alt={isRedesign ? "Dr. Maya Reynolds, PsyD, Licensed Clinical Psychologist in Santa Monica" : "Family of four on a beach at sunset"}
                 fill
                 className="object-cover object-top"
-                sizes="(max-width: 1024px) 100vw, 40vw"
+                sizes="(max-width: 1024px) 100vw, 33vw"
               />
             </div>
+            {isRedesign && (
+              <div className="pt-3 text-[11.5px] tracking-[0.08em] font-light opacity-75" style={{ color: "var(--color-text)", fontFamily: "var(--font-body)" }}>
+                Dr. Maya Reynolds, PsyD · Licensed Clinical Psychologist
+              </div>
+            )}
           </div>
 
-          {/* Text Content */}
-          <div className="lg:col-span-7 order-1 lg:order-2 space-y-5" style={{ color: "var(--color-text)", fontFamily: "var(--font-body)" }}>
+          {/* Editorial Formatted Content */}
+          <div className="lg:col-span-8 space-y-8" style={{ color: "var(--color-text)", fontFamily: "var(--font-body)" }}>
             {isRedesign ? (
               <>
-                <p className="text-[18px] sm:text-[19.5px] leading-[1.7] font-normal opacity-95">
-                  I’m a licensed clinical psychologist based in Santa Monica, California, offering therapy for adults who feel overwhelmed by anxiety, stress, or the lingering effects of past experiences. Many of the people I work with are high-achieving, thoughtful, and self-aware, but internally feel exhausted, stuck in overthinking, or emotionally on edge.
+                {/* Prominent Lead Statement */}
+                <p className="text-[18px] sm:text-[20px] md:text-[22px] leading-[1.6] font-normal opacity-95">
+                  I offer therapy for adults who feel overwhelmed by anxiety, stress, or the lingering effects of past experiences. Many of the people I work with are high-achieving, thoughtful, and self-aware—yet internally feel exhausted, stuck in overthinking, or emotionally on edge.
                 </p>
-                <p className="text-[15.5px] sm:text-[16.5px] leading-[1.85] font-light">
-                  My work often focuses on anxiety, panic, trauma, and burnout. Clients frequently come to me feeling “functional” on the outside while quietly struggling with constant worry, tension in their body, difficulty sleeping, or a sense that they’re always bracing for something to go wrong. Others are navigating the impact of earlier life experiences that continue to affect their relationships, confidence, or sense of safety.
-                </p>
-                <p className="text-[15.5px] sm:text-[16.5px] leading-[1.85] font-light">
-                  I take a warm, collaborative, and grounded approach to therapy. Sessions are structured enough to feel supportive, while still leaving space for reflection and depth. I integrate evidence-based methods such as cognitive-behavioral therapy (CBT), EMDR, mindfulness-based practices, and body-oriented techniques to help clients understand both the emotional and physiological sides of what they’re experiencing.
-                </p>
-                <p className="text-[15.5px] sm:text-[16.5px] leading-[1.85] font-light">
-                  Trauma work is an important part of my practice. I work with adults who have experienced single-incident trauma as well as more complex, long-standing patterns that may stem from childhood, relationships, or chronic stress. My approach is paced carefully, with an emphasis on safety, stabilization, and helping clients feel more regulated in their daily lives, not just during sessions.
-                </p>
-                <p className="text-[15.5px] sm:text-[16.5px] leading-[1.85] font-light">
-                  In addition to trauma and anxiety, I frequently support clients dealing with professional burnout, perfectionism, and high internal pressure. Many are entrepreneurs, creatives, or professionals who feel disconnected from themselves after years of pushing through stress. Therapy can become a space to slow down, reconnect, and develop more sustainable ways of living and working.
-                </p>
-                <p className="text-[15.5px] sm:text-[16.5px] leading-[1.85] font-light">
-                  I offer both in-person therapy from my Santa Monica office and secure telehealth sessions for clients located in California. My office is a quiet, private space designed to feel calm and grounding, with natural light and a comfortable, uncluttered environment. Clients often share that the space itself helps them feel more at ease when they arrive.
-                </p>
-                <p className="text-[15.5px] sm:text-[16.5px] leading-[1.85] font-light">
-                  I believe therapy works best when clients feel respected, understood, and actively involved in the process. My goal is not just symptom relief, but helping clients develop insight, resilience, and a stronger relationship with themselves over time.
-                </p>
-                <p className="text-[15.5px] sm:text-[16.5px] leading-[1.85] font-light">
-                  If you’re looking for a therapist who combines practical tools with depth-oriented work and who understands the realities of living and working in a fast-paced environment, I may be a good fit.
-                </p>
+
+                {/* Two Editorial Columns */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 pt-2 border-t border-black/5">
+                  <div className="space-y-4">
+                    <h3 className="text-[13px] tracking-[0.2em] uppercase font-semibold opacity-85" style={{ color: "var(--color-eyebrow)" }}>
+                      Anxiety, Panic &amp; Burnout
+                    </h3>
+                    <p className="text-[15px] leading-[1.8] font-light">
+                      Clients frequently come to me feeling &ldquo;functional&rdquo; on the outside while quietly struggling with constant worry, tension in their body, difficulty sleeping, or a sense of always bracing for something to go wrong. I support professionals, creatives, and entrepreneurs who feel disconnected after years of pushing through high internal expectations.
+                    </p>
+                    <p className="text-[15px] leading-[1.8] font-light">
+                      Sessions are structured enough to feel supportive while leaving space for reflection. I integrate CBT, EMDR, mindfulness, and somatic body-oriented techniques to address both emotional and physiological patterns.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-[13px] tracking-[0.2em] uppercase font-semibold opacity-85" style={{ color: "var(--color-eyebrow)" }}>
+                      Trauma, Healing &amp; Care
+                    </h3>
+                    <p className="text-[15px] leading-[1.8] font-light">
+                      Trauma work is an essential part of my practice, whether navigating single-incident trauma or complex, long-standing relational patterns. Our work moves at a carefully paced rhythm, with an emphasis on safety, stabilization, and everyday nervous system regulation.
+                    </p>
+                    <p className="text-[15px] leading-[1.8] font-light">
+                      I offer both in-person sessions in my quiet, sunlit Santa Monica office and secure telehealth for clients across California. Therapy works best when you feel respected, understood, and actively involved in developing insight and lasting resilience.
+                    </p>
+                  </div>
+                </div>
               </>
             ) : (
               <>
-                <p className="text-[18px] sm:text-[19.5px] leading-[1.7] font-normal opacity-95">
+                <p className="text-[18px] sm:text-[20px] md:text-[22px] leading-[1.6] font-normal opacity-95">
                   The clients we work with are balancing so many things at once, it&apos;s often hard for them to put themselves first. Here, your needs are always top priority.
                 </p>
-                <p className="text-[15.5px] sm:text-[16.5px] leading-[1.85] font-light">
-                  Our team takes the time to deeply listen to our clients in order to truly understand their story and their struggles. We recognize that no two people are the same and that personalized therapy means an intentional, tailored approach. You will never find anything one-size-fits-all here.
-                </p>
-                <p className="text-[15.5px] sm:text-[16.5px] leading-[1.85] font-light">
-                  If you&apos;re ready to do the work, we&apos;re ready to help. Sometimes we may gently challenge you to look at things differently and other times we may explore your emotions, all while encouraging you to practice what you&apos;ve learned in your daily life.
-                </p>
-                <p className="text-[15.5px] sm:text-[16.5px] leading-[1.85] font-light">
-                  We take what we do seriously because we know how important it is for our clients. The transformation we see is what drives us every day.
-                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 pt-2 border-t border-black/5">
+                  <p className="text-[15px] leading-[1.8] font-light">
+                    Our team takes the time to deeply listen to our clients in order to truly understand their story and their struggles. We recognize that no two people are the same and that personalized therapy means an intentional, tailored approach. You will never find anything one-size-fits-all here.
+                  </p>
+                  <p className="text-[15px] leading-[1.8] font-light">
+                    If you&apos;re ready to do the work, we&apos;re ready to help. Sometimes we may gently challenge you to look at things differently and other times we may explore your emotions, all while encouraging you to practice what you&apos;ve learned in your daily life.
+                  </p>
+                </div>
               </>
             )}
           </div>

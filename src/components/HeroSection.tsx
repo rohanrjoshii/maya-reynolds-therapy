@@ -8,13 +8,13 @@ export default function HeroSection() {
 
   return (
     <section
-      className="min-h-[84vh] md:min-h-[90vh] py-12 md:py-20 lg:py-24 px-[5vw] overflow-hidden transition-colors duration-300 flex items-center"
+      className="min-h-[82vh] md:min-h-[88vh] py-10 md:py-16 lg:py-20 px-[5vw] overflow-hidden transition-colors duration-300 flex items-center"
       style={{ background: "var(--color-bg)" }}
     >
       <div className="w-full max-w-[1720px] mx-auto">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-14 xl:gap-16">
-          {/* Left Column: Prominent Large Photo matching Squarespace 1365x1246 scale */}
-          <div className="w-full lg:w-[45%] xl:w-[46%] shrink-0 order-2 lg:order-1">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 xl:gap-12">
+          {/* Left Column: Primary Photo (41% width matching original) */}
+          <div className="w-full lg:w-[41%] shrink-0 order-2 lg:order-1">
             <div className="grainy-image relative aspect-[1365/1246] w-full shadow-md">
               <Image
                 src={
@@ -29,17 +29,17 @@ export default function HeroSection() {
                 }
                 fill
                 className="object-cover object-top"
-                sizes="(max-width: 1024px) 100vw, 46vw"
+                sizes="(max-width: 1024px) 100vw, 41vw"
                 priority
               />
             </div>
           </div>
 
-          {/* Center Column: Grand Editorial Copy & Much Bigger Typography */}
-          <div className="w-full lg:w-[43%] xl:w-[44%] order-1 lg:order-2 flex flex-col justify-center px-0 lg:px-2">
-            {/* Eyebrow - large, tracked, italic strong matching original sqsrte-large */}
+          {/* Center Column: Editorial Copy (37% width matching original) */}
+          <div className="w-full lg:w-[37%] order-1 lg:order-2 flex flex-col justify-center px-0 lg:px-4">
+            {/* Eyebrow */}
             <p
-              className="text-[11.5px] sm:text-[12.5px] md:text-[13px] tracking-[0.24em] uppercase font-semibold italic mb-5 md:mb-7"
+              className="text-[11px] sm:text-[12px] md:text-[12.5px] tracking-[0.24em] uppercase font-semibold italic mb-5 md:mb-6"
               style={{
                 color: "var(--color-eyebrow)",
                 fontFamily: "var(--font-body)",
@@ -50,9 +50,9 @@ export default function HeroSection() {
                 : "Online & In-Person Counseling in Newbury Park & Across CA"}
             </p>
 
-            {/* Huge Headline matching original Squarespace 60px-80px scale */}
+            {/* Headline */}
             <h1
-              className="text-[42px] sm:text-[54px] md:text-[64px] lg:text-[72px] xl:text-[80px] leading-[1.07] font-normal mb-6 md:mb-8 tracking-[-0.015em]"
+              className="text-[38px] sm:text-[48px] md:text-[56px] lg:text-[62px] xl:text-[70px] leading-[1.08] font-normal mb-5 md:mb-7 tracking-[-0.015em]"
               style={{
                 fontFamily: "var(--font-heading)",
                 color: "var(--color-heading)",
@@ -71,9 +71,9 @@ export default function HeroSection() {
               )}
             </h1>
 
-            {/* Subcopy with generous reading size */}
+            {/* Subcopy */}
             <p
-              className="text-[16px] sm:text-[17.5px] md:text-[18.5px] leading-[1.8] mb-9 md:mb-11 font-light max-w-xl"
+              className="text-[15px] sm:text-[16.5px] md:text-[17px] leading-[1.75] mb-8 md:mb-10 font-light"
               style={{
                 color: "var(--color-text)",
                 fontFamily: "var(--font-body)",
@@ -89,7 +89,7 @@ export default function HeroSection() {
               {isRedesign ? (
                 <a
                   href="#contact"
-                  className="btn-pill bg-[#1A352F] text-[#FBF9F5] border-[#1A352F] hover:bg-[#BA6A4B] hover:border-[#BA6A4B] px-10 py-4 text-[11.5px] tracking-[0.2em] shadow-sm"
+                  className="btn-pill bg-[#1A352F] text-[#FBF9F5] border-[#1A352F] hover:bg-[#BA6A4B] hover:border-[#BA6A4B] px-9 py-3.5 text-[11px] tracking-[0.2em] shadow-sm inline-block"
                 >
                   Book an Appointment
                 </a>
@@ -101,9 +101,9 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right Column: Secondary Lifestyle Beach Image */}
-          <div className="w-full lg:w-[12%] xl:w-[10%] order-3 hidden lg:block self-center pt-16">
-            <div className="grainy-image relative aspect-[3/4.2] w-full shadow-sm">
+          {/* Right Column: Secondary Lifestyle Beach Image (21% width matching original Screenshot 0) */}
+          <div className="w-full lg:w-[21%] order-3 hidden lg:block self-center pt-6">
+            <div className="grainy-image relative aspect-[1365/1246] w-full shadow-md">
               <Image
                 src={
                   isRedesign
@@ -117,7 +117,7 @@ export default function HeroSection() {
                 }
                 fill
                 className="object-cover"
-                sizes="12vw"
+                sizes="(max-width: 1024px) 100vw, 21vw"
                 priority
               />
             </div>
