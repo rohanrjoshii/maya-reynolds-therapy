@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Conejo Valley Counseling Clone & Dr. Maya Reynolds Redesign
 
-## Getting Started
+A dual-mode Next.js + Tailwind CSS application implementing:
+1. **1:1 UI Clone**: Pixel-accurate clone of [Conejo Valley Family Counseling](https://www.conejovalleycounseling.com/home), including authentic `PrintedMoments` handwritten typography, `#86B3B3` seafoam accent, 3-column asymmetric editorial hero, and rounded-full oval button styling.
+2. **Creative Redesign**: Re-skinned for **Dr. Maya Reynolds, PsyD** (Santa Monica, CA) using approved coastal clay palette (`#1A352F`, `#BA6A4B`, `#FBF9F5`), single-source-of-truth copy from her profile, and Santa Monica lifestyle imagery.
+3. **Custom "Our Office" Section**: Dedicated section featuring her real office photos and practice details.
+4. **Live Mode Toggle**: Toggle between Clone (📋) and Redesign (✨) at the top of the viewport.
 
-First, run the development server:
+---
+
+## Quick Start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To build for production:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Architecture
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: Next.js 16 (App Router + Turbopack)
+- **Styling**: Tailwind CSS with CSS Custom Properties for theme tokens
+- **Typography**: 
+  - Display: `Cormorant Garamond` / `Cormorant Infant`
+  - Body: `Mulish`
+  - Accents: `PrintedMoments` (exact script font from original site)
+- **State**: Lightweight `ThemeContext` providing instantaneous theme switching without page reload.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Key Features & Polish
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Original Accent & Script**: Downloaded and embedded the exact `PrintedMoments` font and sampled `#86B3B3` blue accent for heading emphasis words (`thrive`, `help`, `expertise`, `&`, `specialties`, `you`).
+- **Button Geometry**: Oval/pill outline (`rounded-full`) in header matching the original `CONTACT` pill button and editorial underlined CTA in the hero.
+- **Contrast & Accessibility**: 12.5:1+ contrast on all text against warm linen (`#F6F4EE`) and alabaster (`#FBF9F5`) backgrounds.
+- **Context-Aware Footer**: Switches location, team members, contact links, and serving communities cleanly between Newbury Park (clone) and Santa Monica (redesign).
