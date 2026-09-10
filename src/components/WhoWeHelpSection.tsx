@@ -40,14 +40,14 @@ const redesignCards = [
     description:
       "Whether you have experienced a single-incident trauma or complex, long-standing patterns from early life or relationships, our work moves at a grounded pace with a focus on safety, stabilization, and everyday regulation.",
     image: "/images/redesign-trauma.jpg",
-    alt: "Peaceful Santa Monica beach representing healing journey",
+    alt: "Peaceful sunlit reading nook and journal representing trauma recovery",
   },
   {
     title: "Anxiety & Nervous System Overwhelm",
     description:
       "Constant worry, physical tension, restless sleep, or feeling like you are always bracing for something to go wrong. These experiences are understandable and treatable as we address both emotional and physiological patterns together.",
     image: "/images/redesign-anxiety.jpg",
-    alt: "Calm grounding therapy space for anxiety treatment",
+    alt: "Mindful person taking a deep breath bathed in warm morning sunlight",
   },
 ];
 
@@ -56,11 +56,11 @@ export default function WhoWeHelpSection() {
   const cards = isRedesign ? redesignCards : originalCards;
 
   return (
-    <section className="section-padding transition-colors duration-300" style={{ background: "var(--color-section-alt)" }}>
-      <div className="section-max">
-        {/* Spot 2: Single script word */}
+    <section className="py-20 md:py-32 px-[5vw] transition-colors duration-300" style={{ background: "var(--color-section-alt)" }}>
+      <div className="w-full max-w-[1720px] mx-auto">
+        {/* Section Headline matching Squarespace */}
         <h2
-          className="text-[28px] md:text-[36px] lg:text-[44px] leading-[1.15] font-normal mb-12 md:mb-16 text-center"
+          className="text-[36px] sm:text-[46px] md:text-[54px] lg:text-[62px] leading-[1.12] font-normal mb-14 md:mb-20 text-center tracking-[-0.015em]"
           style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
         >
           {isRedesign ? (
@@ -74,10 +74,11 @@ export default function WhoWeHelpSection() {
           )}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+        {/* 3-Card Grid with Tall Aspect Ratio matching Squarespace 1104x1632 */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 xl:gap-14">
           {cards.map((card) => (
             <div key={card.title} className="group">
-              <div className="grainy-image relative aspect-[4/5] mb-5 md:mb-6 shadow-sm">
+              <div className="grainy-image relative aspect-[2/3] mb-6 md:mb-8 shadow-md">
                 <Image
                   src={card.image}
                   alt={card.alt}
@@ -87,13 +88,13 @@ export default function WhoWeHelpSection() {
                 />
               </div>
               <h3
-                className="text-[22px] md:text-[25px] leading-[1.2] font-normal mb-3"
+                className="text-[25px] sm:text-[28px] md:text-[31px] leading-[1.2] font-normal mb-3.5"
                 style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
               >
                 {card.title}
               </h3>
               <p
-                className="text-[13.5px] leading-[1.8] font-light"
+                className="text-[15px] sm:text-[16px] leading-[1.8] font-light"
                 style={{ color: "var(--color-text)", fontFamily: "var(--font-body)" }}
               >
                 {card.description}

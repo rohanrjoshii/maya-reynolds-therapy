@@ -11,8 +11,8 @@ export default function QuoteBanner({ variant = "first" }: QuoteBannerProps) {
   const { isRedesign } = useTheme();
 
   return (
-    <section className="relative py-20 md:py-28 lg:py-32 overflow-hidden">
-      {/* Background Image with Overlay */}
+    <section className="relative min-h-[52vh] md:min-h-[64vh] py-24 md:py-36 lg:py-44 flex items-center overflow-hidden">
+      {/* Background Image with Cinematic Overlay matching Screenshot 2 */}
       <div className="absolute inset-0">
         <Image
           src={
@@ -24,37 +24,53 @@ export default function QuoteBanner({ variant = "first" }: QuoteBannerProps) {
               ? "/images/redesign-quote-palms.jpg"
               : "/images/original/mother-child.jpg"
           }
-          alt="Atmospheric scenic texture"
+          alt="Atmospheric scenic coastline"
           fill
           className="object-cover"
           sizes="100vw"
+          priority={variant === "first"}
         />
         <div
-          className="absolute inset-0 transition-colors duration-300"
+          className="absolute inset-0 transition-colors duration-500"
           style={{
             background: isRedesign
-              ? "linear-gradient(to right, rgba(26,53,47,0.85), rgba(26,53,47,0.72))"
-              : "linear-gradient(to right, rgba(246,244,238,0.92), rgba(246,244,238,0.82))",
+              ? "linear-gradient(to right, rgba(26,53,47,0.65), rgba(26,53,47,0.45))"
+              : "linear-gradient(to right, rgba(0,0,0,0.48), rgba(0,0,0,0.32))",
           }}
         />
       </div>
 
-      {/* Quote Text Content */}
-      <div className="relative z-10 section-max px-[5vw]">
+      {/* Quote Text Content - White serif with italic emphasis matching Screenshot 2 */}
+      <div className="relative z-10 w-full max-w-[1720px] mx-auto px-[5vw]">
         <blockquote
-          className="text-[26px] md:text-[34px] lg:text-[42px] leading-[1.25] font-normal max-w-3xl"
+          className="text-[32px] sm:text-[42px] md:text-[50px] lg:text-[56px] xl:text-[62px] leading-[1.22] font-normal max-w-4xl text-white drop-shadow-sm"
           style={{
             fontFamily: "var(--font-heading)",
-            color: isRedesign ? "#FBF9F5" : "var(--color-heading)",
           }}
         >
-          {variant === "first"
-            ? isRedesign
-              ? "Therapy works best when you feel respected, understood, and actively involved in the process."
-              : "You deserve a place where your story is heard, valued, and understood. Nothing will be too heavy for us to carry together."
-            : isRedesign
-            ? "Practical tools combined with depth-oriented work for people living and working in a fast-paced world."
-            : "Honoring where you've been & helping shape where you're headed."}
+          {variant === "first" ? (
+            isRedesign ? (
+              <>
+                Therapy works best when you feel respected, understood, and actively involved.{" "}
+                <em className="font-normal italic">Practical tools combined with depth-oriented work for lasting change.</em>
+              </>
+            ) : (
+              <>
+                You deserve a place where your story is heard, valued, and understood.{" "}
+                <em className="font-normal italic">Nothing will be too heavy for us to carry together.</em>
+              </>
+            )
+          ) : isRedesign ? (
+            <>
+              Grounded, compassionate care for adults in Santa Monica.{" "}
+              <em className="font-normal italic">Helping you feel steady, connected, and present in your everyday life.</em>
+            </>
+          ) : (
+            <>
+              Honoring where you&apos;ve been{" "}
+              <em className="font-normal italic">&amp; helping shape where you&apos;re headed.</em>
+            </>
+          )}
         </blockquote>
       </div>
     </section>

@@ -30,8 +30,8 @@
   --space-24: 96px;
   --space-32: 128px;
 
-  --max-width: 1480px;
-  --content-padding: 4vw;
+  --max-width: 1720px;
+  --content-padding: 5vw;
 }
 
 /* Original Clone Theme */
@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 768px) {
   .section-padding {
-    padding: 110px var(--content-padding);
+    padding: 130px var(--content-padding);
   }
 }
 

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTheme } from "@/context/ThemeContext";
 
 export default function Header() {
-  const { isRedesign, toggleTheme } = useTheme();
+  const { isRedesign } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
@@ -59,21 +59,21 @@ export default function Header() {
 
   return (
     <>
-      {/* Main Navigation Header */}
+      {/* Main Navigation Header - Full Width with corner alignment matching original */}
       <header
         className="sticky top-0 z-40 w-full transition-colors duration-300"
         style={{
           background: "var(--color-bg)",
-          borderBottom: "1px solid rgba(0,0,0,0.05)",
+          borderBottom: "1px solid rgba(0,0,0,0.06)",
         }}
       >
-        <div className="section-max flex items-center justify-between h-[76px] md:h-[88px] px-[5vw]">
-          {/* Logo */}
-          <a href="#" className="shrink-0 transition-opacity hover:opacity-90">
+        <div className="w-full px-[5vw] flex items-center justify-between h-[96px] md:h-[112px]">
+          {/* Upper Left Corner: Brand Logo / Name */}
+          <a href="#" className="shrink-0 transition-opacity hover:opacity-90 flex flex-col justify-center">
             {isRedesign ? (
               <div className="flex flex-col">
                 <span
-                  className="text-xl md:text-2xl font-normal tracking-tight"
+                  className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[38px] font-normal tracking-[-0.015em] leading-none"
                   style={{
                     fontFamily: "var(--font-heading)",
                     color: "var(--color-heading)",
@@ -82,7 +82,7 @@ export default function Header() {
                   Dr. Maya Reynolds
                 </span>
                 <span
-                  className="text-[10px] tracking-[0.2em] uppercase -mt-0.5"
+                  className="text-[10px] sm:text-[11px] md:text-[11.5px] tracking-[0.26em] uppercase font-medium mt-1.5"
                   style={{ color: "var(--color-accent)" }}
                 >
                   PsyD · Clinical Psychologist
@@ -92,16 +92,16 @@ export default function Header() {
               <Image
                 src="/images/original/logo.png"
                 alt="Conejo Valley Family Counseling"
-                width={240}
-                height={58}
-                className="h-[46px] md:h-[54px] w-auto"
+                width={280}
+                height={75}
+                className="h-[52px] sm:h-[64px] md:h-[72px] w-auto object-contain"
                 priority
               />
             )}
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-7 xl:gap-8">
+          <nav className="hidden lg:flex items-center gap-7 xl:gap-9">
             {nav.map((item) => (
               <div
                 key={item.label}
@@ -113,7 +113,7 @@ export default function Header() {
               >
                 <a
                   href={item.href || "#"}
-                  className="text-[11.5px] tracking-[0.16em] uppercase font-medium transition-opacity duration-200 hover:opacity-70"
+                  className="text-[11.5px] md:text-[12px] tracking-[0.2em] uppercase font-medium transition-opacity duration-200 hover:opacity-60"
                   style={{
                     color: "var(--color-heading)",
                     fontFamily: "var(--font-body)",
@@ -124,7 +124,7 @@ export default function Header() {
 
                 {/* Dropdown Menu */}
                 {item.children && activeDropdown === item.label && (
-                  <div className="absolute top-full left-0 pt-2 min-w-[230px] z-50">
+                  <div className="absolute top-full left-0 pt-2 min-w-[240px] z-50">
                     <div
                       className="py-3 px-1 shadow-xl rounded-sm"
                       style={{
@@ -151,18 +151,18 @@ export default function Header() {
               </div>
             ))}
 
-            {/* Oval / Pill Button for Contact / Book an Appointment */}
+            {/* Oval / Pill Button matching Screenshot 1 */}
             {isRedesign ? (
               <a
                 href="#contact"
-                className="btn-pill bg-[#1A352F] text-[#FBF9F5] border-[#1A352F] hover:bg-[#BA6A4B] hover:border-[#BA6A4B] hover:text-white"
+                className="btn-pill bg-[#1A352F] text-[#FBF9F5] border-[#1A352F] hover:bg-[#BA6A4B] hover:border-[#BA6A4B] hover:text-white px-8 py-2.5 text-[11px] tracking-[0.2em]"
               >
                 Book an Appointment
               </a>
             ) : (
               <a
                 href="#contact"
-                className="btn-pill bg-transparent text-[#2B2B2B] border-[#2B2B2B] hover:bg-[#2B2B2B] hover:text-[#F6F4EE]"
+                className="btn-pill bg-transparent text-[#2B2B2B] border-[#2B2B2B] hover:bg-[#2B2B2B] hover:text-[#F6F4EE] px-8 py-2.5 text-[11px] tracking-[0.2em]"
               >
                 Contact
               </a>
@@ -218,7 +218,7 @@ export default function Header() {
               <div key={item.label} className="border-b border-black/5 pb-2">
                 <a
                   href={item.href || "#"}
-                  className="text-[12px] tracking-[0.14em] uppercase font-medium block py-1.5"
+                  className="text-[12px] tracking-[0.16em] uppercase font-medium block py-1.5"
                   style={{ color: "var(--color-heading)" }}
                   onClick={() => setMobileMenuOpen(false)}
                 >
