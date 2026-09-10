@@ -84,25 +84,6 @@ Built for **Stage 2: Internship Selection Process (Grow My Therapy)** — Front-
 
 ---
 
-## 🎥 Part 4: Video Walkthrough Guide (5-Minute Loom Demo)
-
-For the 5-minute Loom client recording, follow this non-technical presentation structure:
-
-1. **Introduction & Welcome (0:00 - 0:45)**:
-   > *"Hi Dr. Reynolds! I’m thrilled to walk you through the first complete draft of your new therapy practice website. Our core goal was to create a warm, calming digital home that immediately puts overwhelmed clients at ease the moment they land on your page, while clearly showcasing your specialized expertise here in Santa Monica."*
-2. **First Impressions & Coastal Theme (0:45 - 1:30)**:
-   > *"We chose an organic coastal color palette—deep forest pine paired with warm coastal clay and soft sand tones. This immediately moves away from cold, clinical aesthetics and instead feels welcoming, grounded, and human."*
-3. **Hero & How We Work (1:30 - 2:30)**:
-   > *"In the hero section, we speak directly to your target clients: thoughtful, high-achieving adults in Santa Monica who feel functional on the outside but exhausted internally. Down in 'How We Work', we translated your clinical approach into clear, comforting language—explaining how you integrate cognitive strategies with body-based somatic awareness."*
-4. **Three Core Services & Your Bio (2:30 - 3:30)**:
-   > *"We spotlighted your three primary specializations: Anxiety & Panic Disorders, Trauma & C-PTSD, and Burnout for High Achievers. In your About section, your portrait is placed alongside your credentials and clinical philosophy so visitors can connect with you as a real person before booking."*
-5. **Our Office & Patient Transparency (3:30 - 4:15)**:
-   > *"We created a dedicated 'Our Office' section showcasing your real practice space on 123th St in Santa Monica. This lets nervous first-time clients visualize the comfortable, private environment awaiting them. We also included transparent FAQ answers regarding fees, superbill insurance reimbursements, and telehealth flexibility."*
-6. **Mobile Walkthrough & Call to Action (4:15 - 5:00)**:
-   > *"Over 70% of clients search on their phones, so every single section adapts seamlessly on mobile devices with fast load times and one-tap consultation booking. I’d love to hear your thoughts and feedback as we finalize your practice's new home!"*
-
----
-
 ## 🚀 Running Locally
 
 ```bash
