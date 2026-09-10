@@ -21,10 +21,15 @@ Built for **Stage 2: Internship Selection Process (Grow My Therapy)** — Front-
 ### 1. Creative Redesign — Desktop Hero
 ![Creative Redesign - Desktop Hero](public/screenshots/desktop-hero.png)
 
-### 2. 1:1 UI Clone of Conejo Valley Family Counseling
+### 2. Mobile Responsive View
+<p align="center">
+  <img src="public/screenshots/mobile-preview.png" alt="Mobile Responsive View" width="380" />
+</p>
+
+### 3. 1:1 UI Clone of Conejo Valley Family Counseling
 ![1:1 UI Clone of Conejo Valley](public/screenshots/clone-preview.png)
 
-### 3. Full Page Redesign
+### 4. Full Page Redesign
 ![Full Page Redesign](public/screenshots/desktop-full.png)
 
 ---
