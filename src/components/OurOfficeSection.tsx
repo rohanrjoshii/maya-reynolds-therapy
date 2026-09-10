@@ -6,7 +6,7 @@ import { useTheme } from "@/context/ThemeContext";
 export default function OurOfficeSection() {
   const { isRedesign } = useTheme();
 
-  // Only show in redesign mode — this is the new custom section
+  // Show only in redesign mode
   if (!isRedesign) return null;
 
   const features = [
@@ -23,7 +23,7 @@ export default function OurOfficeSection() {
     {
       icon: "📍",
       label: "Santa Monica Westside",
-      detail: "123th Street 45 W, Santa Monica, CA 90401 (convenient parking)",
+      detail: "123th Street 45 W, Santa Monica, CA 90401 with convenient parking",
     },
     {
       icon: "💻",
@@ -37,7 +37,7 @@ export default function OurOfficeSection() {
       <div className="section-max">
         {/* Eyebrow */}
         <p
-          className="text-[10.5px] md:text-[11px] tracking-[0.2em] uppercase font-medium mb-4 text-center"
+          className="text-[10px] md:text-[10.5px] tracking-[0.24em] uppercase font-medium mb-4 text-center"
           style={{ color: "var(--color-eyebrow)", fontFamily: "var(--font-body)" }}
         >
           Our Santa Monica Office
@@ -59,19 +59,19 @@ export default function OurOfficeSection() {
 
         {/* Photo Gallery with Dr. Maya Reynolds Office Images */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mb-12 md:mb-16">
-          <div className="relative aspect-[4/3] overflow-hidden shadow-sm">
+          <div className="grainy-image relative aspect-[4/3] shadow-sm">
             <Image
               src="/images/office1.jpeg"
-              alt="Dr. Maya Reynolds therapy office — comfortable counseling space in Santa Monica"
+              alt="Dr. Maya Reynolds therapy office comfortable counseling space in Santa Monica"
               fill
               className="object-cover transition-transform duration-500 hover:scale-[1.02]"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden shadow-sm">
+          <div className="grainy-image relative aspect-[4/3] shadow-sm">
             <Image
               src="/images/office2.jpeg"
-              alt="Therapy office with natural light — safe private space for healing"
+              alt="Therapy office with natural light, a safe private space for healing"
               fill
               className="object-cover transition-transform duration-500 hover:scale-[1.02]"
               sizes="(max-width: 768px) 100vw, 50vw"

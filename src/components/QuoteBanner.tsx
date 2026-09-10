@@ -65,7 +65,7 @@ export default function QuoteBanner({ variant = "first" }: QuoteBannerProps) {
           ) : (
             isRedesign ? (
               <>
-                Practical tools with depth-oriented work — for people who live and work in a{" "}
+                Practical tools combined with depth-oriented work for people living and working in a{" "}
                 <span className="font-script text-[#BA6A4B]">fast-paced</span>{" "}
                 world.
               </>

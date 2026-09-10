@@ -8,38 +8,38 @@ export default function HeroSection() {
 
   return (
     <section
-      className="py-12 md:py-20 lg:py-24 px-[5vw] overflow-hidden transition-colors duration-300"
+      className="py-10 md:py-16 lg:py-20 px-[4vw] overflow-hidden transition-colors duration-300"
       style={{ background: "var(--color-bg)" }}
     >
       <div className="section-max">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
-          {/* Left Column: Primary Portrait Image */}
-          <div className="lg:col-span-4 order-2 lg:order-1">
-            <div className="relative aspect-[3/4] max-w-md mx-auto lg:max-w-none overflow-hidden shadow-sm">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
+          {/* Left Column: Primary Prominent Image */}
+          <div className="w-full lg:w-[42%] shrink-0 order-2 lg:order-1">
+            <div className="grainy-image relative aspect-[10/13] w-full max-w-lg mx-auto lg:max-w-none shadow-sm">
               <Image
                 src={
                   isRedesign
-                    ? "/images/redesign-hero.jpg"
+                    ? "/images/maya-reynolds.png"
                     : "/images/original/hero-family.jpg"
                 }
                 alt={
                   isRedesign
-                    ? "Dr. Maya Reynolds client finding peace and clarity in Santa Monica"
+                    ? "Dr. Maya Reynolds, Licensed Clinical Psychologist in Santa Monica"
                     : "Family embracing on the beach"
                 }
                 fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 35vw"
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 100vw, 42vw"
                 priority
               />
             </div>
           </div>
 
-          {/* Center Column: Editorial Typography & Copy */}
-          <div className="lg:col-span-5 order-1 lg:order-2 flex flex-col justify-center px-0 lg:px-4">
+          {/* Center Column: Editorial Copy */}
+          <div className="w-full lg:w-[38%] order-1 lg:order-2 flex flex-col justify-center px-0 lg:px-2">
             {/* Eyebrow */}
             <p
-              className="text-[10.5px] md:text-[11px] tracking-[0.2em] uppercase font-medium mb-6 md:mb-8"
+              className="text-[10px] md:text-[10.5px] tracking-[0.24em] uppercase font-medium mb-6 md:mb-8"
               style={{
                 color: "var(--color-eyebrow)",
                 fontFamily: "var(--font-body)",
@@ -52,7 +52,7 @@ export default function HeroSection() {
 
             {/* Headline */}
             <h1
-              className="text-[34px] sm:text-[42px] lg:text-[46px] xl:text-[52px] leading-[1.14] font-normal mb-6 tracking-[-0.01em]"
+              className="text-[34px] sm:text-[40px] lg:text-[46px] xl:text-[50px] leading-[1.14] font-normal mb-6"
               style={{
                 fontFamily: "var(--font-heading)",
                 color: "var(--color-heading)",
@@ -73,14 +73,14 @@ export default function HeroSection() {
 
             {/* Subcopy */}
             <p
-              className="text-[14px] md:text-[15px] leading-[1.75] mb-8 max-w-md font-light"
+              className="text-[14px] md:text-[15px] leading-[1.8] mb-8 font-light"
               style={{
                 color: "var(--color-text)",
                 fontFamily: "var(--font-body)",
               }}
             >
               {isRedesign
-                ? "Therapy for high-achieving adults navigating anxiety, trauma, and burnout. Practical tools combined with depth-oriented work — in Santa Monica and across California."
+                ? "Therapy for high-achieving adults navigating anxiety, trauma, and burnout. Practical tools combined with depth-oriented work, offered in Santa Monica and across California."
                 : "Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow."}
             </p>
 
@@ -89,7 +89,7 @@ export default function HeroSection() {
               {isRedesign ? (
                 <a
                   href="#contact"
-                  className="btn-pill bg-[#1A352F] text-[#FBF9F5] border-[#1A352F] hover:bg-[#BA6A4B] hover:border-[#BA6A4B] px-8 py-3 text-[11.5px]"
+                  className="btn-pill bg-[#1A352F] text-[#FBF9F5] border-[#1A352F] hover:bg-[#BA6A4B] hover:border-[#BA6A4B]"
                 >
                   Book an Appointment
                 </a>
@@ -101,9 +101,9 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right Column: Secondary Lifestyle Beach Image */}
-          <div className="lg:col-span-3 order-3 hidden lg:block self-center pt-8">
-            <div className="relative aspect-[3/4] w-full overflow-hidden shadow-sm">
+          {/* Right Column: Secondary Beach Image */}
+          <div className="w-full lg:w-[20%] order-3 hidden lg:block self-center pt-12">
+            <div className="grainy-image relative aspect-[3/4] w-full shadow-sm">
               <Image
                 src={
                   isRedesign
@@ -117,7 +117,7 @@ export default function HeroSection() {
                 }
                 fill
                 className="object-cover"
-                sizes="25vw"
+                sizes="20vw"
                 priority
               />
             </div>

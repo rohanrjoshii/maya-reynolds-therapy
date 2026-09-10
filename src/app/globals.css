@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ========================================================
-   CUSTOM FONTS
+   CUSTOM AUTHENTIC WEBFONTS
    ======================================================== */
 @font-face {
   font-family: 'PrintedMoments';
@@ -12,11 +12,10 @@
 }
 
 /* ========================================================
-   DESIGN TOKENS — Conejo Valley Clone + Dr. Maya Redesign
+   DESIGN TOKENS
    ======================================================== */
 
 :root {
-  /* Spacing Scale */
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -31,12 +30,11 @@
   --space-24: 96px;
   --space-32: 128px;
 
-  /* Max content width */
-  --max-width: 1400px;
-  --content-padding: 5vw;
+  --max-width: 1480px;
+  --content-padding: 4vw;
 }
 
-/* ─── Original Clone Theme ─── */
+/* Original Clone Theme */
 .theme-original {
   --color-bg: #F6F4EE;
   --color-surface: #FFFFFF;
@@ -44,7 +42,7 @@
   --color-heading: #2B2B2B;
   --color-accent: #86B3B3;
   --color-script: #86B3B3;
-  --color-muted: #666666;
+  --color-muted: #5C5C5C;
   --color-border: #2B2B2B;
   --color-btn-bg: transparent;
   --color-btn-text: #2B2B2B;
@@ -53,15 +51,15 @@
   --color-btn-hover-text: #ffffff;
   --color-footer-bg: #F6F4EE;
   --color-footer-text: #2B2B2B;
-  --color-eyebrow: #666666;
+  --color-eyebrow: #6B6B6B;
   --color-quote-bg: #F6F4EE;
-  --color-section-alt: #ECE8DE;
+  --color-section-alt: #ECE7DE;
   --font-heading: 'Cormorant Infant', 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Mulish', 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-script: 'PrintedMoments', 'Caveat', cursive;
+  --font-script: 'PrintedMoments', cursive;
 }
 
-/* ─── Dr. Maya Reynolds Redesign Theme ─── */
+/* Dr. Maya Reynolds Redesign Theme */
 .theme-redesign {
   --color-bg: #FBF9F5;
   --color-surface: #FFFFFF;
@@ -69,7 +67,7 @@
   --color-heading: #1A352F;
   --color-accent: #BA6A4B;
   --color-script: #BA6A4B;
-  --color-muted: #5F6764;
+  --color-muted: #58605D;
   --color-border: #1A352F;
   --color-btn-bg: #1A352F;
   --color-btn-text: #FBF9F5;
@@ -79,11 +77,11 @@
   --color-footer-bg: #1A352F;
   --color-footer-text: #E8E4DE;
   --color-eyebrow: #BA6A4B;
-  --color-quote-bg: #F2ECE4;
-  --color-section-alt: #F2ECE4;
+  --color-quote-bg: #F3ECE2;
+  --color-section-alt: #F3ECE2;
   --font-heading: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Mulish', 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-script: 'PrintedMoments', 'Caveat', cursive;
+  --font-script: 'PrintedMoments', cursive;
 }
 
 @theme inline {
@@ -93,11 +91,11 @@
   --font-serif: var(--font-heading);
 }
 
-/* ─── Base Styles ─── */
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-body);
+  letter-spacing: 0.015em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -105,33 +103,56 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--color-heading);
+  letter-spacing: -0.01em;
 }
 
-/* ─── Script Accent Typography (e.g. "thrive") ─── */
+/* Script Typography Highlight */
 .font-script {
-  font-family: 'PrintedMoments', 'Caveat', cursive;
+  font-family: 'PrintedMoments', cursive;
   font-style: normal !important;
   font-weight: 300;
   color: var(--color-script);
   display: inline-block;
-  line-height: 0.8;
-  letter-spacing: 0.02em;
-  font-size: 1.15em;
+  line-height: 0.75;
+  letter-spacing: 0.01em;
+  font-size: 1.18em;
   padding: 0 0.08em;
   vertical-align: baseline;
 }
 
-/* ─── Pill / Oval Button Styles ─── */
+/* Grainy Comforting Image Styling */
+.grainy-image {
+  position: relative;
+  overflow: hidden;
+  background-color: #E8E4DB;
+}
+
+.grainy-image img {
+  filter: contrast(1.02) saturate(0.97) brightness(1.01);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.grainy-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+}
+
+/* Pill / Circle Outline Button */
 .btn-pill {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
-  padding: 10px 28px;
+  padding: 10px 30px;
   font-family: var(--font-body);
   font-size: 11px;
   font-weight: 500;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   border: 1px solid var(--color-btn-border);
   background: var(--color-btn-bg);
@@ -148,19 +169,19 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-1px);
 }
 
-/* ─── Underlined Editorial CTA Link ─── */
+/* Underlined Editorial CTA */
 .cta-underline {
   display: inline-flex;
   align-items: center;
   position: relative;
   font-family: var(--font-body);
-  font-size: 11.5px;
+  font-size: 11px;
   font-weight: 500;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-heading);
   text-decoration: none;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
 }
 
 .cta-underline::after {
@@ -171,24 +192,23 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 1px;
   background-color: var(--color-heading);
-  opacity: 0.6;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, transform 0.25s ease;
   transform-origin: left;
 }
 
 .cta-underline:hover::after {
   opacity: 1;
-  transform: scaleX(1.05);
+  transform: scaleX(1.04);
 }
 
-/* ─── Section Spacing ─── */
 .section-padding {
   padding: var(--space-20) var(--content-padding);
 }
 
 @media (min-width: 768px) {
   .section-padding {
-    padding: var(--space-28, 112px) var(--content-padding);
+    padding: 110px var(--content-padding);
   }
 }
 
@@ -197,12 +217,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-/* ─── Smooth scrolling ─── */
 html {
   scroll-behavior: smooth;
 }
 
-/* ─── FAQ Accordion ─── */
 .faq-content {
   max-height: 0;
   overflow: hidden;
@@ -213,7 +231,6 @@ html {
   max-height: 500px;
 }
 
-/* ─── Toggle Switch ─── */
 .toggle-switch {
   position: relative;
   width: 48px;

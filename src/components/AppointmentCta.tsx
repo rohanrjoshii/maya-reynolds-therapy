@@ -13,7 +13,7 @@ export default function AppointmentCta() {
           {/* Text Content */}
           <div>
             <p
-              className="text-[10.5px] md:text-[11px] tracking-[0.2em] uppercase font-medium mb-4"
+              className="text-[10px] md:text-[10.5px] tracking-[0.24em] uppercase font-medium mb-4"
               style={{ color: "var(--color-eyebrow)", fontFamily: "var(--font-body)" }}
             >
               Schedule an Appointment
@@ -37,19 +37,19 @@ export default function AppointmentCta() {
             <div className="space-y-4 mb-8" style={{ color: "var(--color-text)", fontFamily: "var(--font-body)" }}>
               {isRedesign ? (
                 <>
-                  <p className="text-[14.5px] leading-[1.75]">
-                    Coming to therapy is a courageous decision. If you&apos;re looking for a therapist who combines practical tools with depth-oriented work — and who understands the realities of living and working in a fast-paced environment — I may be a good fit.
+                  <p className="text-[14.5px] leading-[1.8] font-light">
+                    Coming to therapy is a courageous decision. If you are looking for a therapist who combines practical tools with depth-oriented work, and who understands the realities of living and working in a fast-paced environment, I may be a good fit.
                   </p>
-                  <p className="text-[14.5px] leading-[1.75]">
+                  <p className="text-[14.5px] leading-[1.8] font-light">
                     I offer both in-person therapy from my Santa Monica office and secure telehealth sessions for clients located anywhere in California. Click below to schedule a consultation.
                   </p>
                 </>
               ) : (
                 <>
-                  <p className="text-[14.5px] leading-[1.75]">
+                  <p className="text-[14.5px] leading-[1.8] font-light">
                     Coming to therapy is a courageous decision, and connecting with the right kind of therapist makes all the difference. We understand that your journey is personal, and we&apos;re here to support you with care and understanding every step of the way.
                   </p>
-                  <p className="text-[14.5px] leading-[1.75]">
+                  <p className="text-[14.5px] leading-[1.8] font-light">
                     Each member of our team brings dedicated expertise and a commitment to support you in your struggles. We want you to feel prioritized, understood, and empowered.
                   </p>
                 </>
@@ -75,8 +75,8 @@ export default function AppointmentCta() {
           </div>
 
           {/* Images Grid */}
-          <div className="grid grid-cols-2 gap-3 md:gap-4">
-            <div className="aspect-[3/4] relative overflow-hidden shadow-sm">
+          <div className="grid grid-cols-2 gap-4 md:gap-5">
+            <div className="grainy-image relative aspect-[3/4] shadow-sm">
               <Image
                 src={isRedesign ? "/images/maya-reynolds.png" : "/images/original/shells1.jpg"}
                 alt={isRedesign ? "Dr. Maya Reynolds, Licensed Clinical Psychologist" : "Person picking up seashells on a sandy beach"}
@@ -85,7 +85,7 @@ export default function AppointmentCta() {
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
-            <div className="aspect-[3/4] relative overflow-hidden mt-8 md:mt-12 shadow-sm">
+            <div className="grainy-image relative aspect-[3/4] mt-8 md:mt-12 shadow-sm">
               <Image
                 src={isRedesign ? "/images/redesign-beach.jpg" : "/images/original/shells2.jpg"}
                 alt={isRedesign ? "Serene Santa Monica coastline" : "Parent and child exploring shells on the beach"}

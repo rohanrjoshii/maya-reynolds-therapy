@@ -6,7 +6,7 @@ import { useTheme } from "@/context/ThemeContext";
 const originalFaqs = [
   {
     q: "What should I expect during my first session?",
-    a: "Your first session is an opportunity for us to get to know you and understand your goals for therapy. We'll discuss your history, what brings you to counseling, and begin to develop a treatment plan together. There's no pressure — this is a safe space to share at your own pace.",
+    a: "Your first session is an opportunity for us to get to know you and understand your goals for therapy. We will discuss your history, what brings you to counseling, and begin to develop a treatment plan together. There is no pressure because this is a safe space to share at your own pace.",
   },
   {
     q: "Do you offer in-person and online therapy?",
@@ -14,11 +14,11 @@ const originalFaqs = [
   },
   {
     q: "How do I know which therapist is right for me?",
-    a: "Finding the right therapist is important. We encourage you to reach out and schedule a brief consultation so you can get a feel for our approach. Each team member has different specialties and styles, and we're happy to help match you with the right fit.",
+    a: "Finding the right therapist is important. We encourage you to reach out and schedule a brief consultation so you can get a feel for our approach. Each team member has different specialties and styles, and we are happy to help match you with the right fit.",
   },
   {
     q: "How long does therapy typically last?",
-    a: "The length of therapy varies depending on your individual needs and goals. Some clients find relief in a few sessions, while others benefit from longer-term support. We'll work together to determine the best approach for you.",
+    a: "The length of therapy varies depending on your individual needs and goals. Some clients find relief in a few sessions, while others benefit from longer-term support. We will work together to determine the best approach for you.",
   },
   {
     q: "Do you accept insurance?",
@@ -29,7 +29,7 @@ const originalFaqs = [
 const redesignFaqs = [
   {
     q: "What does a typical session look like with you?",
-    a: "Sessions are structured enough to feel supportive, while still leaving space for reflection and depth. I integrate evidence-based methods — including CBT, EMDR, mindfulness-based practices, and body-oriented techniques — tailored to what you need. My goal is helping you understand both the emotional and physiological sides of what you're experiencing.",
+    a: "Sessions are structured enough to feel supportive while still leaving space for reflection and depth. I integrate evidence-based methods including CBT, EMDR, mindfulness-based practices, and body-oriented techniques, tailored to what you need. My goal is helping you understand both the emotional and physiological sides of what you experience.",
   },
   {
     q: "Do you offer in-person and online therapy?",
@@ -41,11 +41,11 @@ const redesignFaqs = [
   },
   {
     q: "How do I know if therapy with you is a good fit?",
-    a: "If you're looking for a therapist who combines practical tools with depth-oriented work — and who understands the realities of living and working in a fast-paced environment — I may be a good fit. I encourage you to reach out for an initial consultation so we can discuss your goals and see if the approach resonates with you.",
+    a: "If you are looking for a therapist who combines practical tools with depth-oriented work, and understands the realities of living and working in a fast-paced environment, I may be a good fit. I encourage you to reach out for an initial consultation so we can discuss your goals and see if the approach resonates with you.",
   },
   {
     q: "Who do you typically work with?",
-    a: "I work primarily with adults who feel overwhelmed by anxiety, stress, or the lingering effects of past experiences. Many of my clients are high-achieving, thoughtful, and self-aware — entrepreneurs, creatives, and professionals — who are 'functional' on the outside but internally feel exhausted, stuck in overthinking, or emotionally on edge.",
+    a: "I work primarily with adults who feel overwhelmed by anxiety, stress, or the lingering effects of past experiences. Many of my clients are high-achieving, thoughtful, and self-aware individuals, such as entrepreneurs, creatives, and professionals, who appear functional on the outside but internally feel exhausted, stuck in overthinking, or emotionally on edge.",
   },
 ];
 
@@ -105,7 +105,7 @@ export default function FaqSection() {
                 style={{ paddingBottom: openIndex === i ? "20px" : "0" }}
               >
                 <p
-                  className="text-[13.5px] leading-[1.75] pr-8"
+                  className="text-[13.5px] leading-[1.8] pr-8 font-light"
                   style={{ color: "var(--color-text)", fontFamily: "var(--font-body)" }}
                 >
                   {faq.a}

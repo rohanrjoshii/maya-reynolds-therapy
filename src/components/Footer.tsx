@@ -48,7 +48,7 @@ export default function Footer() {
             <p className="text-[13px] leading-[1.7] opacity-80 mt-3 font-light">
               {isRedesign
                 ? "In-person therapy in Santa Monica and secure telehealth sessions for adults across California. Evidence-based support for anxiety, trauma, and burnout."
-                : "We want to make getting started simple. You're welcome to come into our office in Newbury Park or schedule virtual appointments from anywhere in CA — whatever works best for you."}
+                : "We want to make getting started simple. You are welcome to come into our office in Newbury Park or schedule virtual appointments from anywhere in CA, whatever works best for you."}
             </p>
           </div>
 
@@ -159,7 +159,7 @@ export default function Footer() {
                   <p>Westlake Village · Camarillo</p>
                   <p>Moorpark · Simi Valley</p>
                   <p className="pt-2 text-[12px] italic opacity-75">
-                    In-person sessions in Newbury Park &amp; virtual therapy statewide
+                    In-person sessions in Newbury Park and virtual therapy statewide
                   </p>
                 </>
               )}

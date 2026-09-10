@@ -31,22 +31,22 @@ export default function IntroSection() {
             <div className="space-y-4" style={{ color: "var(--color-text)", fontFamily: "var(--font-body)" }}>
               {isRedesign ? (
                 <>
-                  <p className="text-[14.5px] leading-[1.75]">
-                    Many of the people I work with are high-achieving, thoughtful, and self-aware — but internally feel exhausted, stuck in overthinking, or emotionally on edge. They&apos;re &quot;functional&quot; on the outside while quietly struggling with constant worry, tension in their body, or difficulty sleeping.
+                  <p className="text-[14.5px] leading-[1.8] font-light">
+                    Many of the people I work with are high-achieving, thoughtful, and self-aware, yet internally feel exhausted, stuck in overthinking, or emotionally on edge. They appear steady on the outside while quietly struggling with constant worry, physical tension, or restless sleep.
                   </p>
-                  <p className="text-[14.5px] leading-[1.75]">
-                    I take a warm, collaborative, and grounded approach to therapy. Sessions are structured enough to feel supportive, while still leaving space for reflection and depth. Together, we&apos;ll work to understand both the emotional and physiological sides of what you&apos;re experiencing.
+                  <p className="text-[14.5px] leading-[1.8] font-light">
+                    I take a warm, collaborative, and grounded approach to therapy. Sessions are structured enough to feel supportive while leaving space for reflection and depth. Together, we work to understand both the emotional and physiological sides of what you experience.
                   </p>
-                  <p className="text-[14.5px] leading-[1.75]">
+                  <p className="text-[14.5px] leading-[1.8] font-light">
                     My goal is not just symptom relief, but helping you develop insight, resilience, and a stronger relationship with yourself over time.
                   </p>
                 </>
               ) : (
                 <>
-                  <p className="text-[14.5px] leading-[1.75]">
+                  <p className="text-[14.5px] leading-[1.8] font-light">
                     At Conejo Valley Family Counseling we want to make that hope a reality. Whether you&apos;re an adult seeking personal growth, looking to work through your trauma, a couple working on your relationship, or a parent looking for support for your child, we provide a compassionate and safe space to help you navigate all of life&apos;s ups and downs.
                   </p>
-                  <p className="text-[14.5px] leading-[1.75]">
+                  <p className="text-[14.5px] leading-[1.8] font-light">
                     First and foremost, we believe what you&apos;re going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles.
                   </p>
                 </>
@@ -55,7 +55,7 @@ export default function IntroSection() {
           </div>
 
           {/* Image */}
-          <div className="relative aspect-[4/5] overflow-hidden shadow-sm">
+          <div className="grainy-image relative aspect-[4/5] shadow-sm">
             <Image
               src={isRedesign ? "/images/redesign-therapy-space.jpg" : "/images/original/beach.jpg"}
               alt={isRedesign ? "Calm therapy office with natural light in Santa Monica" : "Sandy beach with gentle ocean waves"}

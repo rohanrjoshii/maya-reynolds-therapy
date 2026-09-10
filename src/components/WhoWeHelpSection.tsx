@@ -31,21 +31,21 @@ const redesignCards = [
   {
     title: "High-Achieving Professionals",
     description:
-      "You push through stress, perfectionism, and high internal pressure — but inside, you feel disconnected and exhausted. Therapy becomes a space to slow down, reconnect, and develop more sustainable ways of living and working.",
+      "You push through stress, perfectionism, and high internal expectations, yet inside you feel disconnected and exhausted. Therapy becomes a space to slow down, reconnect, and cultivate sustainable ways of living and working.",
     image: "/images/redesign-hero.jpg",
     alt: "Confident professional finding balance and clarity",
   },
   {
     title: "Adults Navigating Trauma",
     description:
-      "Whether you've experienced a single-incident trauma or more complex, long-standing patterns from childhood or relationships, my approach is paced carefully — with emphasis on safety, stabilization, and helping you feel more regulated.",
+      "Whether you have experienced a single-incident trauma or complex, long-standing patterns from early life or relationships, our work moves at a grounded pace with a focus on safety, stabilization, and everyday regulation.",
     image: "/images/redesign-beach.jpg",
     alt: "Peaceful Santa Monica beach representing healing journey",
   },
   {
     title: "Anxiety & Nervous System Overwhelm",
     description:
-      "Constant worry, tension in your body, difficulty sleeping, or always bracing for something to go wrong — these experiences are real and treatable. We'll address both the emotional and physiological sides of anxiety together.",
+      "Constant worry, physical tension, restless sleep, or feeling like you are always bracing for something to go wrong. These experiences are understandable and treatable as we address both emotional and physiological patterns together.",
     image: "/images/redesign-therapy-space.jpg",
     alt: "Calm grounding therapy space for anxiety treatment",
   },
@@ -76,7 +76,7 @@ export default function WhoWeHelpSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
           {cards.map((card) => (
             <div key={card.title} className="group">
-              <div className="aspect-[4/5] relative overflow-hidden mb-5 md:mb-6 shadow-sm">
+              <div className="grainy-image relative aspect-[4/5] mb-5 md:mb-6 shadow-sm">
                 <Image
                   src={card.image}
                   alt={card.alt}
@@ -92,7 +92,7 @@ export default function WhoWeHelpSection() {
                 {card.title}
               </h3>
               <p
-                className="text-[13.5px] leading-[1.75]"
+                className="text-[13.5px] leading-[1.8] font-light"
                 style={{ color: "var(--color-text)", fontFamily: "var(--font-body)" }}
               >
                 {card.description}

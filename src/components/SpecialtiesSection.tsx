@@ -24,17 +24,17 @@ const redesignSpecialties = [
   {
     title: "Anxiety & Panic Therapy",
     description:
-      "Constant worry, tension in your body, difficulty sleeping, or a sense that you're always bracing for something to go wrong. We'll use cognitive-behavioral therapy (CBT) and mindfulness-based practices to address both the emotional and physiological sides of anxiety — helping you feel more regulated in your daily life.",
+      "Constant worry, tension in your body, difficulty sleeping, or feeling like you are always bracing for something to go wrong. We will use cognitive-behavioral therapy (CBT) and mindfulness-based practices to address both emotional and physiological patterns, helping you feel more regulated in daily life.",
   },
   {
     title: "Trauma Processing & EMDR",
     description:
-      "I work with adults who have experienced single-incident trauma as well as more complex, long-standing patterns from childhood, relationships, or chronic stress. Using EMDR and body-oriented techniques, my approach is paced carefully with an emphasis on safety, stabilization, and lasting recovery.",
+      "I work with adults who have experienced single-incident trauma as well as complex, long-standing patterns from childhood, relationships, or chronic stress. Using EMDR and body-oriented techniques, our work moves at a grounded pace with an emphasis on safety, stabilization, and lasting recovery.",
   },
   {
     title: "Burnout & Perfectionism",
     description:
-      "Many of my clients are entrepreneurs, creatives, or professionals who feel disconnected from themselves after years of pushing through stress. Together, we'll build awareness around high internal pressure and develop more sustainable ways of living and working — reconnecting you with what matters most.",
+      "Many of my clients are entrepreneurs, creatives, or professionals who feel disconnected from themselves after years of pushing through stress. Together, we will build awareness around high internal pressure and develop sustainable ways of living and working that reconnect you with what matters most.",
   },
 ];
 
@@ -70,7 +70,7 @@ export default function SpecialtiesSection() {
                 {specialty.title}
               </h3>
               <p
-                className="text-[13.5px] leading-[1.75] mb-5 font-light"
+                className="text-[13.5px] leading-[1.8] mb-5 font-light"
                 style={{ color: "var(--color-text)", fontFamily: "var(--font-body)" }}
               >
                 {specialty.description}
