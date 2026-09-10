@@ -16,14 +16,9 @@ export default function IntroSection() {
               className="text-[28px] md:text-[36px] lg:text-[42px] leading-[1.18] font-normal mb-6 md:mb-8"
               style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
             >
-              {isRedesign ? (
-                "You're more than the stress you carry."
-              ) : (
-                <>
-                  You&apos;re holding onto hope that life can be better than it is right{" "}
-                  <span className="font-script">now</span>.
-                </>
-              )}
+              {isRedesign
+                ? "You're more than the stress you carry."
+                : "You're holding onto hope that life can be better than it is right now."}
             </h2>
             <div className="space-y-4" style={{ color: "var(--color-text)", fontFamily: "var(--font-body)" }}>
               {isRedesign ? (

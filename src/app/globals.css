@@ -66,7 +66,7 @@
   --color-text: #2E3331;
   --color-heading: #1A352F;
   --color-accent: #BA6A4B;
-  --color-script: #BA6A4B;
+  --color-script: #86B3B3;
   --color-muted: #58605D;
   --color-border: #1A352F;
   --color-btn-bg: #1A352F;
@@ -106,17 +106,18 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.01em;
 }
 
-/* Script Typography Highlight */
+/* Script Typography Highlight — exactly 5 tasteful single-word accents */
 .font-script {
   font-family: 'PrintedMoments', cursive;
   font-style: normal !important;
   font-weight: 300;
-  color: var(--color-script);
+  color: var(--color-script, #86B3B3);
   display: inline-block;
-  line-height: 0.75;
+  white-space: nowrap;
+  line-height: 1;
   letter-spacing: 0.01em;
-  font-size: 1.18em;
-  padding: 0 0.08em;
+  font-size: 1.14em;
+  padding: 0 0.06em;
   vertical-align: baseline;
 }
 

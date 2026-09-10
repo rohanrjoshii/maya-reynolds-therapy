@@ -18,12 +18,16 @@ export default function AppointmentCta() {
             >
               Schedule an Appointment
             </p>
+            {/* Spot 5: Single script word */}
             <h2
               className="text-[28px] md:text-[36px] lg:text-[42px] leading-[1.16] font-normal mb-6 md:mb-8"
               style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
             >
               {isRedesign ? (
-                "Find a therapist who understands your world."
+                <>
+                  Find a therapist who understands your{" "}
+                  <span className="font-script">world</span>.
+                </>
               ) : (
                 <>
                   Find a therapist who is the right fit for{" "}

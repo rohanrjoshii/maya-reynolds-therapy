@@ -24,9 +24,7 @@ export default function HowWeWorkSection() {
           {isRedesign ? (
             "A warm, collaborative, and grounded approach."
           ) : (
-            <>
-              We&apos;re here to make a <span className="font-script">difference</span>.
-            </>
+            "We're here to make a difference."
           )}
         </h2>
 

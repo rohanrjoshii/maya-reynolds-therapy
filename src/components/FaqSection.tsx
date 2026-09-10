@@ -61,13 +61,7 @@ export default function FaqSection() {
           className="text-[28px] md:text-[36px] lg:text-[44px] leading-[1.15] font-normal mb-10 md:mb-14 text-center"
           style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
         >
-          {isRedesign ? (
-            "Common questions"
-          ) : (
-            <>
-              Frequently asked <span className="font-script">questions</span>
-            </>
-          )}
+          {isRedesign ? "Common questions" : "Frequently asked questions"}
         </h2>
 
         <div className="space-y-0">

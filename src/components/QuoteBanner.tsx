@@ -48,27 +48,13 @@ export default function QuoteBanner({ variant = "first" }: QuoteBannerProps) {
             color: isRedesign ? "#FBF9F5" : "var(--color-heading)",
           }}
         >
-          {variant === "first" ? (
-            isRedesign ? (
-              "Therapy works best when you feel respected, understood, and actively involved in the process."
-            ) : (
-              <>
-                You deserve a place where your story is heard, valued, and understood. Nothing will be too heavy for us to{" "}
-                <span className="font-script text-[#86B3B3]">carry</span>{" "}
-                together.
-              </>
-            )
-          ) : (
-            isRedesign ? (
-              "Practical tools combined with depth-oriented work for people living and working in a fast-paced world."
-            ) : (
-              <>
-                Honoring where you&apos;ve been{" "}
-                <span className="font-script text-[#86B3B3]">&amp;</span>{" "}
-                helping shape where you&apos;re headed.
-              </>
-            )
-          )}
+          {variant === "first"
+            ? isRedesign
+              ? "Therapy works best when you feel respected, understood, and actively involved in the process."
+              : "You deserve a place where your story is heard, valued, and understood. Nothing will be too heavy for us to carry together."
+            : isRedesign
+            ? "Practical tools combined with depth-oriented work for people living and working in a fast-paced world."
+            : "Honoring where you've been & helping shape where you're headed."}
         </blockquote>
       </div>
     </section>

@@ -58,12 +58,15 @@ export default function WhoWeHelpSection() {
   return (
     <section className="section-padding transition-colors duration-300" style={{ background: "var(--color-section-alt)" }}>
       <div className="section-max">
+        {/* Spot 2: Single script word */}
         <h2
           className="text-[28px] md:text-[36px] lg:text-[44px] leading-[1.15] font-normal mb-12 md:mb-16 text-center"
           style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
         >
           {isRedesign ? (
-            "Who I work with"
+            <>
+              Who I work <span className="font-script">with</span>
+            </>
           ) : (
             <>
               Who we <span className="font-script">help</span>

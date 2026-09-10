@@ -50,7 +50,7 @@ export default function HeroSection() {
                 : "Online & In-Person Counseling in Newbury Park & Across CA"}
             </p>
 
-            {/* Headline */}
+            {/* Headline with 1 tasteful script word */}
             <h1
               className="text-[34px] sm:text-[40px] lg:text-[46px] xl:text-[50px] leading-[1.14] font-normal mb-6"
               style={{
@@ -59,7 +59,10 @@ export default function HeroSection() {
               }}
             >
               {isRedesign ? (
-                "Find clarity, calm, and a stronger sense of self."
+                <>
+                  Find clarity, calm, and a stronger sense of{" "}
+                  <span className="font-script">self</span>.
+                </>
               ) : (
                 <>
                   Rebuild your foundation on solid ground and finally begin to{" "}

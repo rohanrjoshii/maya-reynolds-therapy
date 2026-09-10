@@ -45,12 +45,15 @@ export default function SpecialtiesSection() {
   return (
     <section className="section-padding transition-colors duration-300" style={{ background: "var(--color-bg)" }}>
       <div className="section-max">
+        {/* Spot 4: Single script word */}
         <h2
           className="text-[28px] md:text-[36px] lg:text-[44px] leading-[1.15] font-normal mb-12 md:mb-16 text-center"
           style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
         >
           {isRedesign ? (
-            "How I can help"
+            <>
+              How I can <span className="font-script">help</span>
+            </>
           ) : (
             <>
               Our <span className="font-script">specialties</span> include…
