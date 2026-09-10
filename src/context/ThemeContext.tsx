@@ -8,12 +8,18 @@ interface ThemeContextType {
 }
 
 const ThemeContext = createContext<ThemeContextType>({
-  isRedesign: false,
+  isRedesign: true,
   toggleTheme: () => {},
 });
 
-export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [isRedesign, setIsRedesign] = useState(false);
+export function ThemeProvider({
+  children,
+  initialRedesign = true,
+}: {
+  children: ReactNode;
+  initialRedesign?: boolean;
+}) {
+  const [isRedesign, setIsRedesign] = useState(initialRedesign);
 
   const toggleTheme = () => setIsRedesign((prev) => !prev);
 

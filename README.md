@@ -4,7 +4,7 @@ A dual-mode Next.js + Tailwind CSS application implementing:
 1. **1:1 UI Clone**: Pixel-accurate clone of [Conejo Valley Family Counseling](https://www.conejovalleycounseling.com/home), including authentic `PrintedMoments` handwritten typography, `#86B3B3` seafoam accent, 3-column asymmetric editorial hero, and rounded-full oval button styling.
 2. **Creative Redesign**: Re-skinned for **Dr. Maya Reynolds, PsyD** (Santa Monica, CA) using approved coastal clay palette (`#1A352F`, `#BA6A4B`, `#FBF9F5`), single-source-of-truth copy from her profile, and Santa Monica lifestyle imagery.
 3. **Custom "Our Office" Section**: Dedicated section featuring her real office photos and practice details.
-4. **Live Mode Toggle**: Toggle between Clone (📋) and Redesign (✨) at the top of the viewport.
+4. **Clean Route Separation**: Root `/` hosts the pristine Dr. Maya Reynolds experience, while `/clone` preserves the 1:1 Conejo Valley template clone.
 
 ---
 

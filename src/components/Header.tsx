@@ -59,33 +59,6 @@ export default function Header() {
 
   return (
     <>
-      {/* Interactive Theme Switcher Banner */}
-      <div
-        className="w-full py-2 px-4 text-center text-xs md:text-sm font-medium flex items-center justify-center gap-3 z-50 relative border-b transition-colors duration-300"
-        style={{
-          background: isRedesign ? "#1A352F" : "#ECE8DE",
-          color: isRedesign ? "#FBF9F5" : "#2B2B2B",
-          borderColor: isRedesign ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.06)",
-        }}
-      >
-        <span className="hidden sm:inline">
-          {isRedesign
-            ? "✨ Redesign Mode: Dr. Maya Reynolds, PsyD (Santa Monica)"
-            : "📋 UI Clone Mode: Conejo Valley Family Counseling"}
-        </span>
-        <span className="sm:hidden text-xs">
-          {isRedesign ? "✨ Redesign Mode" : "📋 Clone Mode"}
-        </span>
-        <button
-          onClick={toggleTheme}
-          className={`toggle-switch ${isRedesign ? "active" : ""}`}
-          aria-label="Toggle between clone and creative redesign"
-        />
-        <span className="text-[11px] opacity-75 hidden md:inline">
-          Switch view
-        </span>
-      </div>
-
       {/* Main Navigation Header */}
       <header
         className="sticky top-0 z-40 w-full transition-colors duration-300"

@@ -32,21 +32,21 @@ const redesignCards = [
     title: "High-Achieving Professionals",
     description:
       "You push through stress, perfectionism, and high internal expectations, yet inside you feel disconnected and exhausted. Therapy becomes a space to slow down, reconnect, and cultivate sustainable ways of living and working.",
-    image: "/images/redesign-hero.jpg",
+    image: "/images/redesign-adults.jpg",
     alt: "Confident professional finding balance and clarity",
   },
   {
     title: "Adults Navigating Trauma",
     description:
       "Whether you have experienced a single-incident trauma or complex, long-standing patterns from early life or relationships, our work moves at a grounded pace with a focus on safety, stabilization, and everyday regulation.",
-    image: "/images/redesign-beach.jpg",
+    image: "/images/redesign-trauma.jpg",
     alt: "Peaceful Santa Monica beach representing healing journey",
   },
   {
     title: "Anxiety & Nervous System Overwhelm",
     description:
       "Constant worry, physical tension, restless sleep, or feeling like you are always bracing for something to go wrong. These experiences are understandable and treatable as we address both emotional and physiological patterns together.",
-    image: "/images/redesign-therapy-space.jpg",
+    image: "/images/redesign-anxiety.jpg",
     alt: "Calm grounding therapy space for anxiety treatment",
   },
 ];

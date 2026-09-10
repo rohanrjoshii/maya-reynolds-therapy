@@ -18,10 +18,10 @@ export default function QuoteBanner({ variant = "first" }: QuoteBannerProps) {
           src={
             variant === "first"
               ? isRedesign
-                ? "/images/redesign-beach.jpg"
+                ? "/images/redesign-quote.jpg"
                 : "/images/original/divider.png"
               : isRedesign
-              ? "/images/redesign-therapy-space.jpg"
+              ? "/images/redesign-quote-palms.jpg"
               : "/images/original/mother-child.jpg"
           }
           alt="Atmospheric scenic texture"

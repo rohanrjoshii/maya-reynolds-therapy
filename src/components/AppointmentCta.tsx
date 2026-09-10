@@ -79,7 +79,7 @@ export default function AppointmentCta() {
           <div className="grid grid-cols-2 gap-4 md:gap-5">
             <div className="grainy-image relative aspect-[3/4] shadow-sm">
               <Image
-                src={isRedesign ? "/images/redesign-therapy-space.jpg" : "/images/original/shells1.jpg"}
+                src={isRedesign ? "/images/redesign-cta-stones.jpg" : "/images/original/shells1.jpg"}
                 alt={isRedesign ? "Calm, welcoming therapy seating in Santa Monica" : "Person picking up seashells on a sandy beach"}
                 fill
                 className="object-cover"
@@ -88,7 +88,7 @@ export default function AppointmentCta() {
             </div>
             <div className="grainy-image relative aspect-[3/4] mt-8 md:mt-12 shadow-sm">
               <Image
-                src={isRedesign ? "/images/redesign-beach.jpg" : "/images/original/shells2.jpg"}
+                src={isRedesign ? "/images/redesign-cta-boardwalk.jpg" : "/images/original/shells2.jpg"}
                 alt={isRedesign ? "Serene Santa Monica coastline at sunset" : "Parent and child exploring shells on the beach"}
                 fill
                 className="object-cover"
