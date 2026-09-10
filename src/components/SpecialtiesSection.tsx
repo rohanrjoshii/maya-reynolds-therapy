@@ -50,9 +50,7 @@ export default function SpecialtiesSection() {
           style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
         >
           {isRedesign ? (
-            <>
-              How I can <span className="font-script">help</span>
-            </>
+            "How I can help"
           ) : (
             <>
               Our <span className="font-script">specialties</span> include…

@@ -17,10 +17,7 @@ export default function IntroSection() {
               style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
             >
               {isRedesign ? (
-                <>
-                  You&apos;re more than the stress you{" "}
-                  <span className="font-script">carry</span>.
-                </>
+                "You're more than the stress you carry."
               ) : (
                 <>
                   You&apos;re holding onto hope that life can be better than it is right{" "}

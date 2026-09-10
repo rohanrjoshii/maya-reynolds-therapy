@@ -23,10 +23,7 @@ export default function AppointmentCta() {
               style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
             >
               {isRedesign ? (
-                <>
-                  Find a therapist who understands your{" "}
-                  <span className="font-script">world</span>.
-                </>
+                "Find a therapist who understands your world."
               ) : (
                 <>
                   Find a therapist who is the right fit for{" "}

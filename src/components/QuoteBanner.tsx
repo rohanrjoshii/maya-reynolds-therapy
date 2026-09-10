@@ -50,11 +50,7 @@ export default function QuoteBanner({ variant = "first" }: QuoteBannerProps) {
         >
           {variant === "first" ? (
             isRedesign ? (
-              <>
-                Therapy works best when you feel respected, understood, and{" "}
-                <span className="font-script text-[#BA6A4B]">actively</span>{" "}
-                involved in the process.
-              </>
+              "Therapy works best when you feel respected, understood, and actively involved in the process."
             ) : (
               <>
                 You deserve a place where your story is heard, valued, and understood. Nothing will be too heavy for us to{" "}
@@ -64,11 +60,7 @@ export default function QuoteBanner({ variant = "first" }: QuoteBannerProps) {
             )
           ) : (
             isRedesign ? (
-              <>
-                Practical tools combined with depth-oriented work for people living and working in a{" "}
-                <span className="font-script text-[#BA6A4B]">fast-paced</span>{" "}
-                world.
-              </>
+              "Practical tools combined with depth-oriented work for people living and working in a fast-paced world."
             ) : (
               <>
                 Honoring where you&apos;ve been{" "}

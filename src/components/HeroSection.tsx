@@ -46,11 +46,11 @@ export default function HeroSection() {
               }}
             >
               {isRedesign
-                ? "Licensed Clinical Psychologist in Santa Monica, CA"
+                ? "Licensed Clinical Psychologist · Santa Monica, CA"
                 : "Online & In-Person Counseling in Newbury Park & Across CA"}
             </p>
 
-            {/* Headline with Local SEO */}
+            {/* Headline */}
             <h1
               className="text-[34px] sm:text-[40px] lg:text-[46px] xl:text-[50px] leading-[1.14] font-normal mb-6"
               style={{
@@ -59,10 +59,7 @@ export default function HeroSection() {
               }}
             >
               {isRedesign ? (
-                <>
-                  Therapy for Anxiety, Trauma, and Burnout in{" "}
-                  <span className="font-script">Santa Monica</span>.
-                </>
+                "Find clarity, calm, and a stronger sense of self."
               ) : (
                 <>
                   Rebuild your foundation on solid ground and finally begin to{" "}
@@ -80,7 +77,7 @@ export default function HeroSection() {
               }}
             >
               {isRedesign
-                ? "Dr. Maya Reynolds, PsyD provides grounded, evidence-based therapy for high-achieving adults in Santa Monica and across California. Practical tools combined with depth-oriented care for anxiety, EMDR trauma processing, and sustainable healing."
+                ? "Therapy for high-achieving adults navigating anxiety, trauma, and burnout. Practical tools combined with depth-oriented work, offered in Santa Monica and across California."
                 : "Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow."}
             </p>
 
@@ -91,7 +88,7 @@ export default function HeroSection() {
                   href="#contact"
                   className="btn-pill bg-[#1A352F] text-[#FBF9F5] border-[#1A352F] hover:bg-[#BA6A4B] hover:border-[#BA6A4B]"
                 >
-                  Schedule a Consultation
+                  Book an Appointment
                 </a>
               ) : (
                 <a href="#contact" className="cta-underline">

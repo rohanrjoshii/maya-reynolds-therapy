@@ -63,9 +63,7 @@ export default function WhoWeHelpSection() {
           style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
         >
           {isRedesign ? (
-            <>
-              Who I work <span className="font-script">with</span>
-            </>
+            "Who I work with"
           ) : (
             <>
               Who we <span className="font-script">help</span>

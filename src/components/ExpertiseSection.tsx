@@ -29,9 +29,7 @@ export default function ExpertiseSection() {
           style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
         >
           {isRedesign ? (
-            <>
-              Areas of <span className="font-script">focus</span>
-            </>
+            "Areas of focus"
           ) : (
             <>
               Our areas of <span className="font-script">expertise</span>

@@ -47,7 +47,7 @@ export default function OurOfficeSection() {
           className="text-[28px] md:text-[36px] lg:text-[44px] leading-[1.15] font-normal mb-6 md:mb-8 text-center"
           style={{ fontFamily: "var(--font-heading)", color: "var(--color-heading)" }}
         >
-          A quiet, grounded space for <span className="font-script">healing</span>
+          A quiet, grounded space for healing
         </h2>
 
         <p
